@@ -16,7 +16,6 @@ def canUnlockAll(boxes):
 
     visited.add(0)
 
-
     stack = []
     stack.append(0)
 
