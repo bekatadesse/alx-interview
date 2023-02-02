@@ -11,9 +11,9 @@ def canUnlockAll(boxes):
         return False
     if len(boxes) == 1:
         return True
-
+    # Track 
     visited = set()
-
+    # Track
     visited.add(0)
 
     stack = []
@@ -26,4 +26,5 @@ def canUnlockAll(boxes):
                 visited.add(key)
                 stack.append(key)
 
+    # number of visited boxes
     return len(boxes) == len(visited)
